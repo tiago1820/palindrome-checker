@@ -1,0 +1,25 @@
+service: palindrome-checker
+
+frameworkVersion: "4"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: ${env:AWS_REGION, 'us-east-1'}
+  stage: ${env:STAGE, 'dev'}
+  profile: tiago
+
+functions:
+  palindrome:
+    handler: src/adapters/handler.handler
+    events:
+      - httpApi:
+          path: /palindrome
+          method: post
+
+plugins:
+  - serverless-offline
+
+package:
+  exclude:
+    - node_modules/**
