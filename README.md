@@ -1,3 +1,41 @@
+# Estructura del proyecto:
+## Lambda y CLI
+```bash
+.
+├── cli
+│   ├── docs
+│   │   ├── 01.png
+│   │   └── 02.png
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── src
+│   │   ├── adapters
+│   │   │   └── lambdaAdapter.ts
+│   │   ├── commands
+│   │   │   └── palindromeCommand.ts
+│   │   ├── domain
+│   │   │   └── palindrome.ts
+│   │   ├── index.ts
+│   │   └── services
+│   │       └── palindromeService.ts
+│   └── tsconfig.json
+├── lambda
+│   ├── notes.txt
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── serverless.yml
+│   ├── src
+│   │   ├── adapters
+│   │   │   └── handler.ts
+│   │   ├── domain
+│   │   │   └── palindromeService.ts
+│   │   └── ports
+│   │       └── palindromePort.ts
+│   └── tsconfig.json
+├── LICENSE
+└── README.md
+```
+
 # Palindrome CLI
 
 CLI para verificar palíndromos usando Lambda.
