@@ -28,3 +28,8 @@ echo "LAMBDA_URL=https://ejemplo.com/lambda" > .env
 ```bash
 npm start
 ```
+![Ejemplo de uso 1](cli/docs/01.png)
+*Figura 1: Ejecución del CLI con una palabra palíndromo.*
+
+![Ejemplo de uso 2](cli/docs/02.png)
+*Figura 2: Ejecución del CLI con una palabra que no es palíndromo.*
